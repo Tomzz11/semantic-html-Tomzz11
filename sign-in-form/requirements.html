@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Functional Requirements - User Sign In Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>User Sign In</title>
 </head>
 <body>
-
-    <header>
-        <h1>Functional Requirements for the User Sign In Form</h1>
-    </header>
-
     <main>
-        <section>
-            <h2>User Authentication</h2>
-            <ul>
-                <li>Users can sign in using their email and password securely.</li>
-            </ul>
-        </section>
+        <h1>Sign In</h1>
 
-        <section>
-            <h2>Input Validation</h2>
-            <ul>
-                <li>The system checks that the email and password meet required criteria.</li>
-                <li>Passwords must be between 8 and 20 characters long.</li>
-            </ul>
-        </section>
+        <form action="/signin" method="post">
+            <fieldset>
+                <legend>User Authentication</legend>
 
-        <section>
-            <h2>Account Creation</h2>
-            <ul>
-                <li>Users can create a new account by clicking on a link (<a href="signup.html">signup.html</a>).</li>
-            </ul>
-        </section>
+                <div>
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        autocomplete="email"
+                        inputmode="email"
+                        placeholder="you@example.com"/>
+                </div>
 
-        <section>
-            <h2>Forgot Password</h2>
-            <ul>
-                <li>Users can reset their password through a guided process (<a href="forget-password.html">forget-password.html</a>).</li>
-            </ul>
-        </section>
+                <div>
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                        minlength="8"
+                        maxlength="20"
+                        autocomplete="current-password"
+                        placeholder="8–20 characters"
+                        aria-describedby="password-help"/>
+                    <small id="password-help">Passwords must be 8–20 characters long.</small>
+                </div>
+
+                <button type="submit">Sign In</button>
+            </fieldset>
+
+            <p>
+                Don't have an account?
+                <a href="signup.html">Create one</a>
+            </p>
+            <p>
+                Forgot your password?
+                <a href="forget-password.html">Reset it here</a>
+            </p>
+        </form>
     </main>
-
 </body>
 </html>

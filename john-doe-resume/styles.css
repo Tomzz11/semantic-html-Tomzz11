@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+
+header, main, section, article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    color: #222;
+}
+
+
+#about {
+    text-align: center;
+}
+#about img {
+    border-radius: 10px;
+    margin: 15px 0;
+}
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+}
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+article h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #444;
+}
+article p {
+    margin-bottom: 10px;
+    color: #555;
+}
+ul {
+    margin-left: 20px;
+}
+
+
+#contact ul {
+    list-style: none;
+}
+#contact li {
+    margin-bottom: 8px;
+}
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
